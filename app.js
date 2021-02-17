@@ -45,7 +45,7 @@ yargs.command({
     }
   },
   handler(argv) {
-    console.log('Removing that there note...🔥...it will bother you no more.')
+    // console.log('Removing that there note...🔥...it will bother you no more.')
     notes.removeNote(argv.title)
   }
 })
@@ -55,7 +55,8 @@ yargs.command({
   command: 'list',
   describe: 'List all notes',
   handler() {
-    console.log('Listing them notes!')
+    // console.log('Listing them notes!')
+    notes.listNotes()
   }
 })
 
