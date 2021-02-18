@@ -21,6 +21,13 @@ const addNote = (title, body) => {
   //! .find() will simply return the first match it finds or undefined - goes until first item found
   const duplicateNote = notes.find((note) => note.title === title)
 
+  // console.log(duplicateNote)
+  // console.log(title)
+  // console.log(body)
+
+  // see debug data in dev tools
+  // debugger
+
   // if (duplicateNotes.length === 0) {
   if (!duplicateNote) {
     notes.push({
